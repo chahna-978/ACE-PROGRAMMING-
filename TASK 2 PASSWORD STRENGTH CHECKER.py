@@ -19,8 +19,8 @@ for x in password:
         number = True
     if x=="!" or x=="@" or x=="#" or x=="$" or x=="%" or x=="&" or x=="*" or x=="^" or x=="-" or x=="+" or x=="_"or x=="~" or x=="`" or x=="(" or x==")" or x=="=" or x=="[" or x=="]" or x=="{" or x=="}" or x==":" or x==";"or x=="'" or x=="," or x=="<" or x==">" or x=="?" or x=="/" or x==".":
         special = True
-print ("\n PASSWORD ANALYSIS")
 print ("_________________________________________________________________________________")
+print ("PASSWORD ANALYSIS")
 #LENGTH
 if len(password)>=8:
     print("Atleast 8 characters: YES")
@@ -51,10 +51,9 @@ if number:
     score = score + 1
 else:
     print("Contains a number: NO")
-                
+print ("_________________________________________________________________________________")                
 #CHECKING PASSWORD STRENGTH
 print("ANALYSING YOUR PASSWORD STRENGTH")
-print ("_________________________________________________________________________________")
 
 if score<=2:
     print("PASSWORD STRENGTH: WEAK")
@@ -62,6 +61,7 @@ elif score<=4:
     print("PASSWORD STENGTH: MEDIUM")
 else:
     print("PASSWORD STENGTH: STRONG")
+print ("_________________________________________________________________________________")
         
 print("BY \t CHAHNA GUPTA")
 print("BCA 1-C")
